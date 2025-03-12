@@ -1,0 +1,17 @@
+name: "test1"
+on:
+  push:
+    branches:
+      - main
+jobs:
+  lint-test-coverage:
+    name: Lint check
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+          
