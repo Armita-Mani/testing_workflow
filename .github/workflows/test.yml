@@ -1,4 +1,4 @@
-name: "test1"
+name: test1
 on:
   push:
     branches:
@@ -10,4 +10,16 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - name: Install dependencies
+        run: |
+          python3 --version
+          python -m pip install --upgrade pip
+          python -m pip install --upgrade wheel
+          pip install pypandoc==1.7.5
+          make deps_dev
+
           

@@ -1,0 +1,2 @@
+deps_dev:
+	$(PYTHON_INTERPRETER) -m pip install -U -r requirements.txt
