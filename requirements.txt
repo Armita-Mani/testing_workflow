@@ -1,6 +1,9 @@
-evidently==0.6.5
-sentence-transformers==3.4.1
+evidently[llm]
 torch==2.6.0
 transformers==4.49.0
+torchvision==0.4.0
+sentence-transformers==3.4.1
+pandas
+pytest
 
 
