@@ -52,7 +52,7 @@ def regression_result(predicted_file_path, gold_file_path, columns1):
 
 def test_score():
     generated_file=r'file_sim_scores_detailed_01272025boilerplate.csv'
-    gold_file=r'file_sim_scores_detailed_01272025boilerplate1.csv'
+    gold_file=r'file_sim_scores_detailed_01272025boilerplate.csv'
     
     # Replace with the path to your gold file
     test_result=regression_result(generated_file, gold_file,["source_text_interpretation","most_similar_text","target_text_segment_most_common_interpretation","justification"])
